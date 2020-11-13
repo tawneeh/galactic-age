@@ -36,7 +36,7 @@ export default class GalacticAge {
   }
 
   listAges() {
-  let list = `Age on Mercury: ${this.mercuryAge}, Age on Venus: ${this.venusAge}, Age on Mars: ${this.marsAge}, Age on Jupiter: ${this.jupiterAge}`;
+  let list = `Your age on Mercury is ${this.mercuryAge}. Your age on Venus is ${this.venusAge}. Your age on Mars is ${this.marsAge}. Your age on Jupiter is ${this.jupiterAge}.`;
   return list;
   }
 
