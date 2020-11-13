@@ -13,7 +13,9 @@ export default class GalacticAge {
     return days;
   }
 
-  //mercury() {
-
-  //}
+  mercury() {
+    let days = this.earthAge * 365;
+    let mercuryAge = days / 88;
+    return mercuryAge;
+  }
 }
