@@ -37,7 +37,7 @@ describe('GalacticAge', () => {
   });
 
   test('should return planet ages in a string', () => {
-    expect(galacticAce.listAges()).toEqual("Age on Mercury: 128, Age on Venus: 50, Age on Mars: 16, Age on Jupiter: 2");
+    expect(galacticAge.listAges()).toEqual("Age on Mercury: 128, Age on Venus: 50, Age on Mars: 16, Age on Jupiter: 2");
   });
 
 });
