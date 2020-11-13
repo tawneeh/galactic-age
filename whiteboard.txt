@@ -1,0 +1,13 @@
+Create a class:
+
+export default class galacticAge {
+  constructor(earthAge, mercuryAge, venusAge, marsAge, jupiterAge, expectancy) {
+    this.earthAge = inputtedAge;
+    this.mercuryAge = mercuryAge;
+    this.venusAge = venusAge;
+    this.marsAge = marsAge;
+    this.jupiterAge = jupiterAge;
+    this.expectancy = expectancy;
+  }
+}
+
