@@ -18,4 +18,9 @@ export default class GalacticAge {
     let mercuryAge = Math.trunc(days / 88);
     return mercuryAge;
   }
+
+  venus() {
+
+  }
+
 }
