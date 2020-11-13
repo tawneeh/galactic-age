@@ -18,7 +18,7 @@ describe('GalacticAge', () => {
   });
 
   test('should calculate number of Earth days old', () => {
-    expect(galacticAge.calcDays()).toEqual(1131);
+    expect(galacticAge.calcDays()).toEqual(11315);
   });
 
 });
