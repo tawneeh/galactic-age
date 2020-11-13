@@ -42,7 +42,7 @@ describe('GalacticAge', () => {
   });
 
   test('should subtract Earth Span from Earth Age (years) to determing remaining years', () => {
-    expect(galacticAge.calcRemainder()).toEqual(91);
+    expect(galacticAge.calcRemainder()).toEqual(41);
   });
 
 });
