@@ -5,7 +5,7 @@ describe('GalacticAge', () => {
   let galacticAge;
 
   beforeEach(() => {
-    galacticAge = new GalacticAge(31, 128, 50, 16, 2, 41) // 41 more years
+    galacticAge = new GalacticAge(31, 128, 50, 16, 2, 41)
   });
 
   test('should correctly create a GalacticAge object', () => {
@@ -14,6 +14,7 @@ describe('GalacticAge', () => {
     expect(galacticAge.venusAge).toEqual(50);
     expect(galacticAge.marsAge).toEqual(16);
     expect(galacticAge.jupiterAge).toEqual(2);
+    expect(galacticAge.earthSpan).toEqual(41);
   });
 
   test('should calculate number of Earth days old', () => {
@@ -38,6 +39,10 @@ describe('GalacticAge', () => {
 
   test('should return planet ages in a string', () => {
     expect(galacticAge.listAges()).toEqual("Your age on Mercury is 128. Your age on Venus is 50. Your age on Mars is 16. Your age on Jupiter is 2.");
+  });
+
+  test('should subtract Earth Span from Earth Age (years) to determing remaining years', () => {
+    expect(galacticAge.calcRemainder()).toEqual(91);
   });
 
 });

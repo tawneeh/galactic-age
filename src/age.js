@@ -41,7 +41,9 @@ export default class GalacticAge {
   return list;
   }
 
-  earthSpan() {
-
+  calcRemainder() {
+    let lifeExpectancy = 72;
+    let earthSpan = Math.trunc(lifeExpectancy - this.earthAge);
+    return earthSpan;
   }
 }
