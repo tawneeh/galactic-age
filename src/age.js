@@ -20,7 +20,8 @@ export default class GalacticAge {
   }
 
   venus() {
-
+    let days = this.earthAge * 365;
+    let venusAge = Math.trunc(days / 225);
+    return venusAge;
   }
-
 }
