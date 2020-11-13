@@ -7,4 +7,8 @@ export default class GalacticAge {
     this.jupiterAge = jupiterAge; 
     this.earthExpectancy = earthExpectancy;
   }
+
+  earthDays() {
+    earthAge * 365;
+  }
 }
