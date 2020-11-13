@@ -10,7 +10,7 @@ describe('GalacticAge', () => {
 
   test('should correctly create a GalacticAge object', () => {
     expect(galacticAge.earthAge).toEqual("31");
-    expect(galacticAge.mercuryAge).toEqual("13");
+    expect(galacticAge.mercuryAge).toEqual("132");
     expect(galacticAge.venusAge).toEqual("51");
     expect(galacticAge.marsAge).toEqual("16");
     expect(galacticAge.jupiterAge).toEqual("2");
