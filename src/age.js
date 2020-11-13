@@ -8,7 +8,7 @@ export default class GalacticAge {
     this.earthExpectancy = earthExpectancy;
   }
 
-  earthDays() {
-    earthAge * 365;
+  calcDays() {
+    return this.earthAge * 365;
   }
 }
