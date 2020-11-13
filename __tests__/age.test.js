@@ -45,4 +45,8 @@ describe('GalacticAge', () => {
     expect(galacticAge.calcRemainder()).toEqual(41);
   });
 
+  test('should determine remaining years on Mercury, Venus and Mars', () => {
+    expect(galacticAge.calcPlanetaryRemainder()).toEqual([170, 66, 21]);
+  });
+
 });

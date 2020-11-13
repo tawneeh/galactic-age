@@ -46,4 +46,8 @@ export default class GalacticAge {
     let earthSpan = Math.trunc(lifeExpectancy - this.earthAge);
     return earthSpan;
   }
+
+  calcPlanetaryRemainder() {
+
+  }
 }
