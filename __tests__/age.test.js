@@ -14,7 +14,6 @@ describe('GalacticAge', () => {
     expect(galacticAge.venusAge).toEqual(50);
     expect(galacticAge.marsAge).toEqual(16);
     expect(galacticAge.jupiterAge).toEqual(2);
-    expect(galacticAge.earthExpectancy).toEqual(41);
   });
 
   test('should calculate number of Earth days old', () => {
@@ -35,6 +34,10 @@ describe('GalacticAge', () => {
 
   test('should divide Earth age (years) by 11', () => {
     expect(galacticAge.jupiter()).toEqual(2);
+  });
+
+  test('should return planet ages in a string', () => {
+    expect(galacticeAge.listAges()).toEqual("Age on Mercury: 128, Age on Venus: 50, Age on Mars: 16, Age on Jupiter: 2");
   });
 
 });

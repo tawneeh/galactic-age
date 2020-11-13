@@ -1,11 +1,10 @@
 export default class GalacticAge {
-  constructor(earthAge, mercuryAge, venusAge, marsAge, jupiterAge, earthExpectancy) {
+  constructor(earthAge, mercuryAge, venusAge, marsAge, jupiterAge) {
     this.earthAge = earthAge;
     this.mercuryAge = mercuryAge;
     this.venusAge = venusAge;
     this.marsAge = marsAge;
-    this.jupiterAge = jupiterAge; 
-    this.earthExpectancy = earthExpectancy;
+    this.jupiterAge = jupiterAge;
   }
 
   calcDays() {
@@ -34,6 +33,10 @@ export default class GalacticAge {
   jupiter() {
   let jupiterAge = Math.trunc(this.earthAge / 11);
   return jupiterAge;
+  }
+
+  listAges() {
+
   }
 
 }
