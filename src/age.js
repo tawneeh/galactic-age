@@ -30,4 +30,9 @@ export default class GalacticAge {
     let marsAge = Math.trunc(days / 687);
     return marsAge;
   }
+
+  jupiter() {
+
+  }
+
 }

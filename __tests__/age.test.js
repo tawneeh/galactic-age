@@ -33,4 +33,8 @@ describe('GalacticAge', () => {
     expect(galacticAge.mars()).toEqual(16);
   });
 
+  test('should divide Earth age (years) by 11', () => {
+    expect(galacticAge.jupiter()).toEqual(2);
+  });
+
 });
