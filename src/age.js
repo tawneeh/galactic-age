@@ -11,4 +11,8 @@ export default class GalacticAge {
   calcDays() {
     return this.earthAge * 365;
   }
+
+  mercury() {
+
+  }
 }
