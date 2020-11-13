@@ -21,8 +21,4 @@ describe('GalacticAge', () => {
     expect(galacticAge.calcDays()).toEqual(11315);
   });
 
-  test('should divide number of Earth days old by 88', () => {
-    expect(galacticAge.mercury()).toEqual(128);
-  });
-
 });

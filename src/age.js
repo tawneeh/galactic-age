@@ -9,10 +9,11 @@ export default class GalacticAge {
   }
 
   calcDays() {
-    return this.earthAge * 365;
+    let days = this.earthAge * 365;
+    return days;
   }
 
-  mercury() {
+  //mercury() {
 
-  }
+  //}
 }
