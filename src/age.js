@@ -24,4 +24,10 @@ export default class GalacticAge {
     let venusAge = Math.trunc(days / 225);
     return venusAge;
   }
+
+  mars() {
+    let days = this.earthAge * 365;
+    let marsAge = Math.trunc(days / 687);
+    return marsAge;
+  }
 }
