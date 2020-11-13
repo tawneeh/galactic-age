@@ -32,7 +32,8 @@ export default class GalacticAge {
   }
 
   jupiter() {
-
+  let jupiterAge = Math.trunc(this.earthAge / 11);
+  return jupiterAge;
   }
 
 }
