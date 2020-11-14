@@ -49,4 +49,8 @@ describe('GalacticAge', () => {
     expect(galacticAge.mercuryRemainder()).toEqual(170);
   });
 
+  test('should subtract Venus expectancy from Venus Age to determine remaining years on Venus', () => {
+    expect(galacticAge.mercuryRemainder()).toEqual(116);
+  });
+
 });
