@@ -13,6 +13,7 @@ export default class GalacticAge {
     return days;
   }
 
+
   mercury() {
     let days = this.earthAge * 365;
     let mercuryAge = Math.trunc(days / 88);
@@ -47,7 +48,4 @@ export default class GalacticAge {
     return earthSpan;
   }
 
-  calcPlanetaryRemainder() {
-
-  }
 }
