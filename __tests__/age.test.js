@@ -57,8 +57,12 @@ describe('GalacticAge', () => {
     expect(galacticAge.marsRemainder()).toEqual(22);
   });
 
-  test('should sutract Jupiter Expectancy from Jupiter Age to determine remaining years on Jupiter', () => {
+  test('should subtract Jupiter Expectancy from Jupiter Age to determine remaining years on Jupiter', () => {
     expect(galacticAge.jupiterRemainder()).toEqual(4);
+  });
+
+  test('should return a list of remaining years based on specific planetary year', () => {
+    expect(galacticAge.listRemainder()).toEqual("You only have 41 years left on Earth. 170 on Mercury, 66 on Venus, 22 on Mars, and 4 on Jupiter. So make each day count!");
   });
 
 });
