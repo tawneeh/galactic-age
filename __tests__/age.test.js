@@ -58,7 +58,7 @@ describe('GalacticAge', () => {
   });
 
   test('should sutract Jupiter Expectancy from Jupiter Age to determine remaining years on Jupiter', () => {
-    expect(galacticAge.jupiterRemainder()).toEqual(4);
+    expect(galacticAge.jupiterRemainder()).toEqual(14);
   });
 
 });

@@ -66,4 +66,10 @@ export default class GalacticAge {
   return marsSpan;
   }
 
+  jupiterRemainder() {
+  let jupiterExpectancy = 6;
+  let jupiterSpan = Math.trunc(jupiterExpectancy - this.jupiterAge);
+  return jupiterSpan;
+  }
+
 }
