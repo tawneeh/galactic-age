@@ -23,7 +23,7 @@ Open by Downloading
 
 ## Known Bugs
 
-This application is not fully functional yet. 
+This application has no known bugs. 
 
 ## Support and contact details
 
