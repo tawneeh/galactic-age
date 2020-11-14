@@ -57,4 +57,8 @@ describe('GalacticAge', () => {
     expect(galacticAge.marsRemainder()).toEqual(22);
   });
 
+  test('should sutract Jupiter Expectancy from Jupiter Age to determine remaining years on Jupiter', () => {
+    expect(galacticAge.jupiterRemainder()).toEqual(4);
+  });
+
 });
