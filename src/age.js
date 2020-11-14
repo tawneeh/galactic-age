@@ -54,4 +54,10 @@ export default class GalacticAge {
   return mercurySpan;
   }
 
+  venusRemainder() {
+  let venusExpectancy = 116;
+  let venusSpan = Math.trunc(venusExpectancy - this.venusAge);
+  return venusSpan;
+  }
+
 }
