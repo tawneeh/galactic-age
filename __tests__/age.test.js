@@ -41,12 +41,12 @@ describe('GalacticAge', () => {
     expect(galacticAge.listAges()).toEqual("Your age on Mercury is 128. Your age on Venus is 50. Your age on Mars is 16. Your age on Jupiter is 2.");
   });
 
-  test('should subtract Earth Span from Earth Age (years) to determing remaining Earth years', () => {
+  test('should subtract Earth Span from Earth Age (years) to determing remaining years on Earth', () => {
     expect(galacticAge.calcRemainder()).toEqual(41);
   });
 
-  test('should subtract Mercury expectancy from Mercury Age to determine remaining Mercury years', () => {
-    expect(galacticAge.mercuryRemainder()).toEqual(270);
+  test('should subtract Mercury expectancy from Mercury Age to determine remaining years on Mercury', () => {
+    expect(galacticAge.mercuryRemainder()).toEqual(170);
   });
 
 });
