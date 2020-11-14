@@ -54,7 +54,7 @@ describe('GalacticAge', () => {
   });
 
   test('should subtract Mars Expectancy from Mars Age to determine remaining years on Mars', () => {
-    expect(galacticAge.marsRemainder()).toEqual(31);
+    expect(galacticAge.marsRemainder()).toEqual(22);
   });
 
 });
