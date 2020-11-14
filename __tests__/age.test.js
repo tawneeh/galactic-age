@@ -33,7 +33,7 @@ describe('GalacticAge', () => {
     expect(galacticAge.mars()).toEqual(16);
   });
 
-  test('should divide Earth age (years) by 11', () => {
+  test('should divide Earth Age (years) by 11', () => {
     expect(galacticAge.jupiter()).toEqual(2);
   });
 
@@ -45,12 +45,16 @@ describe('GalacticAge', () => {
     expect(galacticAge.calcRemainder()).toEqual(41);
   });
 
-  test('should subtract Mercury expectancy from Mercury Age to determine remaining years on Mercury', () => {
+  test('should subtract Mercury Expectancy from Mercury Age to determine remaining years on Mercury', () => {
     expect(galacticAge.mercuryRemainder()).toEqual(170);
   });
 
-  test('should subtract Venus expectancy from Venus Age to determine remaining years on Venus', () => {
+  test('should subtract Venus Expectancy from Venus Age to determine remaining years on Venus', () => {
     expect(galacticAge.venusRemainder()).toEqual(66);
+  });
+
+  test('should subtract Mars Expectancy from Mars Age to determine remaining years on Mars', () => {
+    expect(galacticAge.marsRemainder()).toEqual(21);
   });
 
 });
