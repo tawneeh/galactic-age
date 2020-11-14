@@ -60,4 +60,10 @@ export default class GalacticAge {
   return venusSpan;
   }
 
+  marsRemainder() {
+  let marsExpectancy = 38;
+  let marsSpan = Math.trunc(marsExpectancy - this.marsAge);
+  return marsSpan;
+  }
+
 }
