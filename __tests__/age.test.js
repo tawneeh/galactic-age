@@ -46,7 +46,7 @@ describe('GalacticAge', () => {
   });
 
   test('should subtract Mercury expectancy from Mercury Age to determine remaining Mercury years', () => {
-    expect(galacticAge.mercuryRemainder()).toEqual(170);
+    expect(galacticAge.mercuryRemainder()).toEqual(270);
   });
 
 });
