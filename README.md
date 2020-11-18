@@ -15,15 +15,18 @@ Software Requirements
 * An internet browser of your choice
 * A code editor; I prefer VSCode
 
-Open by Downloading
+Open by Downloading or Cloning
 * Navigate to <https://github.com/tawneeh/galactic-age.git>
-* Download this repository to your computer by clicking the green Code button and'Download Zip'
+* Download this repository to your computer by clicking the green Code button and 'Download Zip'
 * Or clone the repository
-* Then, double click `index.html` to view the page
+
+Setup Instructions
+* After this repository is on your computer, open the terminal and type in `npm install`. This will install npm, which allows you to experience the full developer environment set up.
+* In the terminal, type in `npm run test` to  run Jest testing on the tests that have been created in the age.test.js file. 
 
 ## Known Bugs
 
-This application has no known bugs. 
+This application has no UI logic yet and no known bugs.  
 
 ## Support and contact details
 
