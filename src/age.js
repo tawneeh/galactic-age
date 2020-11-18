@@ -10,7 +10,7 @@ export default class GalacticAge {
 
   calcDays() {
     let days = this.earthAge * 365;
-    return days;
+      return days;
   }
 
 
