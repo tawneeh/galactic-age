@@ -14,7 +14,6 @@ describe('GalacticAge', () => {
     expect(galacticAge.venusAge).toEqual(50);
     expect(galacticAge.marsAge).toEqual(16);
     expect(galacticAge.jupiterAge).toEqual(2);
-    expect(galacticAge.earthSpan).toEqual(41);
   });
 
   test('should calculate number of Earth days old', () => {
