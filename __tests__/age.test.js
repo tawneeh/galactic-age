@@ -5,7 +5,7 @@ describe('GalacticAge', () => {
   let galacticAge;
 
   beforeEach(() => {
-    galacticAge = new GalacticAge(31, 128, 50, 16, 2, 41)
+    galacticAge = new GalacticAge(31, 128, 50, 16, 2)
   });
 
   test('should correctly create a GalacticAge object', () => {
