@@ -43,32 +43,9 @@ export default class GalacticAge {
 
   calcRemainder() {
     let lifeExpectancy = 72;
-    let earthSpan = Math.trunc(lifeExpectancy - this.earthAge);
-      return earthSpan;
-  }
-
-  mercuryRemainder() {
-    let mercuryExpectancy = 298;
-    let mercurySpan = Math.trunc(mercuryExpectancy - this.mercuryAge);
-      return mercurySpan;
-  }
-
-  venusRemainder() {
-    let venusExpectancy = 116;
-    let venusSpan = Math.trunc(venusExpectancy - this.venusAge);
-      return venusSpan;
-  }
-
-  marsRemainder() {
-    let marsExpectancy = 38;
-    let marsSpan = Math.trunc(marsExpectancy - this.marsAge);
-      return marsSpan;
-  }
-
-  jupiterRemainder() {
-    let jupiterExpectancy = 6;
-    let jupiterSpan = Math.trunc(jupiterExpectancy - this.jupiterAge);
-      return jupiterSpan;
+    if (this.earthAge > lifeExpectancy) {
+      return ("You're already too old!");
+    }
   }
 
 }
