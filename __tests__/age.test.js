@@ -60,4 +60,8 @@ describe('GalacticAge', () => {
     expect(galacticAge.jupiterRemainder()).toEqual(4);
   });
 
+  test('should return years left or surpassed life expectancy on Earth', () => {
+    expect(calcRemainder()).toHaveReturned(41);
+  });
+
 });
