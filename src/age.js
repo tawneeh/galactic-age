@@ -8,67 +8,55 @@ export default class GalacticAge {
   }
 
   calcDays() {
-    let days = this.earthAge * 365;
-      return days;
+    return this.earthAge * 365;
   }
 
-
   mercury() {
-    let days = this.earthAge * 365;
-    let mercuryAge = Math.trunc(days / 88);
-      return mercuryAge;
+    const days = this.calcDays();
+    return Math.trunc(days / 88);
   }
 
   venus() {
-    let days = this.earthAge * 365;
-    let venusAge = Math.trunc(days / 225);
-      return venusAge;
+    const days = this.calcDays();
+    return Math.trunc(days / 225);
   }
 
   mars() {
-    let days = this.earthAge * 365;
-    let marsAge = Math.trunc(days / 687);
-      return marsAge;
+    const days = this.calcDays();
+    return Math.trunc(days / 687);
   }
 
   jupiter() {
-    let jupiterAge = Math.trunc(this.earthAge / 11);
-      return jupiterAge;
+    return Math.trunc(this.earthAge / 11);
   }
 
   listAges() {
-    let list = `Your age on Mercury is ${this.mercuryAge}. Your age on Venus is ${this.venusAge}. Your age on Mars is ${this.marsAge}. Your age on Jupiter is ${this.jupiterAge}.`;
-      return list;
+    const list = `Your age on Mercury is ${this.mercuryAge}. Your age on Venus is ${this.venusAge}. Your age on Mars is ${this.marsAge}. Your age on Jupiter is ${this.jupiterAge}.`;
+    return list;
   }
 
   calcRemainder() {
-    let lifeExpectancy = 72;
-    let earthSpan = Math.trunc(lifeExpectancy - this.earthAge);
-      return earthSpan;
+    const lifeExpectancy = 72;
+    return Math.trunc(lifeExpectancy - this.earthAge);
   }
 
   mercuryRemainder() {
     let mercuryExpectancy = 298;
-    let mercurySpan = Math.trunc(mercuryExpectancy - this.mercuryAge);
-      return mercurySpan;
+    return Math.trunc(mercuryExpectancy - this.mercuryAge);
   }
 
   venusRemainder() {
     let venusExpectancy = 116;
-    let venusSpan = Math.trunc(venusExpectancy - this.venusAge);
-      return venusSpan;
+    return Math.trunc(venusExpectancy - this.venusAge);
   }
 
   marsRemainder() {
     let marsExpectancy = 38;
-    let marsSpan = Math.trunc(marsExpectancy - this.marsAge);
-      return marsSpan;
+    return Math.trunc(marsExpectancy - this.marsAge);
   }
 
   jupiterRemainder() {
     let jupiterExpectancy = 6;
-    let jupiterSpan = Math.trunc(jupiterExpectancy - this.jupiterAge);
-      return jupiterSpan;
+    return Math.trunc(jupiterExpectancy - this.jupiterAge);
   }
-
 }
