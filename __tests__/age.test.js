@@ -52,5 +52,5 @@ describe('GalacticAge', () => {
     galacticAge = new GalacticAge(31, 128, 50, 16, 2)
   });
 test('should return a message if user has not surpassed life expectancy on Earth', () => {
-    expect(galacticAge.calcRemainder()).toEqual("Keep on keeping on");
+    expect(galacticAge.calcRemainder()).toEqual("Keep on keepin on!");
   });
