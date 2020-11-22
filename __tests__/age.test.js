@@ -40,8 +40,17 @@ describe('GalacticAge', () => {
     expect(galacticAge.listAges()).toEqual("Your age on Mercury is 302. Your age on Venus is 118. Your age on Mars is 38. Your age on Jupiter is 6.");
   });
 
-  test('should determine if user has surpassed life expectancy and return a message', () => {
-    expect(galacticAge.calcRemainder()).toEqual("You're already too old!");
+  test('should determine if user has surpassed life expectancy on Earth and return how many years they have lived past the expectancy', () => {
+    expect(galacticAge.calcRemainder()).toEqual(1);
   });
 
 });
+
+  let galacticAge;
+
+  beforeEach(() => {
+    galacticAge = new GalacticAge(31, 128, 50, 16, 2)
+  });
+test('should return a message if user has not surpassed life expectancy on Earth', () => {
+    expect(galacticAge.calcRemainder()).toEqual("Keep on keeping on");
+  });

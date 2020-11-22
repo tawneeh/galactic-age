@@ -43,9 +43,12 @@ export default class GalacticAge {
 
   calcRemainder() {
     let lifeExpectancy = 72;
-    if (this.earthAge > lifeExpectancy) {
-      return ("You're already too old!");
-    }
+    let earthSpan = Math.trunc(lifeExpectancy - this.earthAge);
+      if (earthSpan < 0) {
+        return Math.abs(earthSpan);
+      } else {
+        return ("Keep on keepin on!");
+      }
   }
 
 }
