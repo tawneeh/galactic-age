@@ -45,7 +45,7 @@ describe('GalacticAge', () => {
   });
 
   test('should determine if user has surpassed life expectancy on Mercury and return how many years they have lived past the expectancy', () => {
-    expect(galacticAge.mercuryRemainder()).toEqual(4);
+    expect(galacticAge.mercuryRemainder()).toEqual(-4);
   });
 
 });

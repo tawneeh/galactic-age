@@ -51,4 +51,14 @@ export default class GalacticAge {
       }
   }
 
+  mercuryRemainder() {
+    let mercuryExpectancy = 298;
+    let mercurySpan = Math.trunc(mercuryExpectancy - this.mercuryAge);
+      if (mercurySpan < 0) {
+        return Math.abs(mercurySpan);
+      } else {
+        return ("Keep on keepin on!");
+      }
+  }
+
 }
