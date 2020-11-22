@@ -62,6 +62,13 @@ export default class GalacticAge {
   }
 
   venusRemainder() {
+    let venusExpectancy = 116;
+    let venusSpan = Math.trunc(venusExpectancy - this.venusAge);
+      if (venusSpan < 0) {
+        return Math.abs(venusSpan);
+      } else {
+        return ("Keep on keepin on!");
+      }
   }
 
 }
