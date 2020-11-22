@@ -21,8 +21,8 @@ Open by Downloading or Cloning
 * Or clone the repository
 
 Setup Instructions
-* After this repository is on your computer, open the terminal and type in `npm install`. This will install npm, which allows you to experience the full developer environment set up.
-* In the terminal, type in `npm run test` to  run Jest testing on the tests that have been created in the age.test.js file. 
+* After this repository is on your computer, open the terminal and type in `npm install`. This will install npm, which allows you to experience the full developer environment
+* In the terminal, type in `npm run test` to  run Jest testing on the tests that have been created in the age.test.js file
 
 ## Known Bugs
 
