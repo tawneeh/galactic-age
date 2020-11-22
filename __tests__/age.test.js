@@ -48,6 +48,10 @@ describe('GalacticAge', () => {
     expect(galacticAge.mercuryRemainder()).toEqual(4);
   });
 
+  test('should determine if user has surpassed life expectancy on Venus and return how many years they have lived past the expectancy', () => {
+    expect(galacticAge.venusRemainder()).toEqual();
+  });
+
 });
 
   let galacticAge;
