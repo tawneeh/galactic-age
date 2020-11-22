@@ -71,4 +71,7 @@ export default class GalacticAge {
       }
   }
 
+  marsRemainder() {
+  }
+
 }
