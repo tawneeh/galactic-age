@@ -72,6 +72,16 @@ export default class GalacticAge {
   }
 
   marsRemainder() {
+    let marsExpectancy = 38;
+    let marsSpan = Math.trunc(marsExpectancy - this.marsAge);
+      if (marsSpan < 0) {
+        return Math.abs(marsSpan);
+      } else {
+        return ("Keep on keepin on!");
+      }
+  }
+
+  jupiterRemainder() {
   }
 
 }

@@ -52,10 +52,6 @@ describe('GalacticAge', () => {
     expect(galacticAge.venusRemainder()).toEqual(2);
   });
 
-  test('should determine if user has surpassed life expectancy on Mars and return how many years they have lived past the expectancy', () => {
-    expect(galacticAge.marsRemainder()).toEqual();
-  });
-
 });
 
   let galacticAge;
@@ -65,4 +61,8 @@ describe('GalacticAge', () => {
   });
 test('should return a message if user has not surpassed life expectancy on Earth', () => {
     expect(galacticAge.calcRemainder()).toEqual("Keep on keepin on!");
+  });
+
+  test('should return a message if user has not surpassed life expectancy on Mars', () => {
+
   });
