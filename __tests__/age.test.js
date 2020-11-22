@@ -5,51 +5,51 @@ describe('GalacticAge', () => {
   let galacticAge;
 
   beforeEach(() => {
-    galacticAge = new GalacticAge(73, 302, 118, 38, 6)
+    galacticAge = new GalacticAge(80, 331, 129, 42, 7)
   });
 
   test('should correctly create a GalacticAge object', () => {
-    expect(galacticAge.earthAge).toEqual(73);
-    expect(galacticAge.mercuryAge).toEqual(302);
-    expect(galacticAge.venusAge).toEqual(118);
-    expect(galacticAge.marsAge).toEqual(38);
+    expect(galacticAge.earthAge).toEqual(80);
+    expect(galacticAge.mercuryAge).toEqual(331);
+    expect(galacticAge.venusAge).toEqual(129);
+    expect(galacticAge.marsAge).toEqual(42);
     expect(galacticAge.jupiterAge).toEqual(6);
   });
 
   test('should calculate number of Earth days old', () => {
-    expect(galacticAge.calcDays()).toEqual(26645);
+    expect(galacticAge.calcDays()).toEqual(29200);
   });
 
   test('should divide number of Earth days old by 88', () => {
-    expect(galacticAge.mercury()).toEqual(302);
+    expect(galacticAge.mercury()).toEqual(331);
   });
 
   test('should divide number of Earth days old by 225', () => {
-    expect(galacticAge.venus()).toEqual(118);
+    expect(galacticAge.venus()).toEqual(129);
   });
 
   test('should divide number of Earth days old by 687', () => {
-    expect(galacticAge.mars()).toEqual(38);
+    expect(galacticAge.mars()).toEqual(42);
   });
 
   test('should divide Earth Age (years) by 11', () => {
-    expect(galacticAge.jupiter()).toEqual(6);
+    expect(galacticAge.jupiter()).toEqual(7);
   });
 
   test('should return planet ages in a string', () => {
-    expect(galacticAge.listAges()).toEqual("Your age on Mercury is 302. Your age on Venus is 118. Your age on Mars is 38. Your age on Jupiter is 6.");
+    expect(galacticAge.listAges()).toEqual("Your age on Mercury is 331. Your age on Venus is 129. Your age on Mars is 42. Your age on Jupiter is 7.");
   });
 
   test('should determine if user has surpassed life expectancy on Earth and return how many years they have lived past the expectancy', () => {
-    expect(galacticAge.calcRemainder()).toEqual(1);
+    expect(galacticAge.calcRemainder()).toEqual(8);
   });
 
   test('should determine if user has surpassed life expectancy on Mercury and return how many years they have lived past the expectancy', () => {
-    expect(galacticAge.mercuryRemainder()).toEqual(4);
+    expect(galacticAge.mercuryRemainder()).toEqual(33);
   });
 
   test('should determine if user has surpassed life expectancy on Venus and return how many years they have lived past the expectancy', () => {
-    expect(galacticAge.venusRemainder()).toEqual(2);
+    expect(galacticAge.venusRemainder()).toEqual(13);
   });
 
 });
