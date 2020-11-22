@@ -67,6 +67,10 @@ test('should return a message if user has not surpassed life expectancy on Earth
     expect(galacticAge.mercuryRemainder()).toEqual("Keep on keepin on!");
   });
 
+  test('should return a message if user has not surpassed life expectancy on Venus', () => {
+    expect(galacticAge.venusRemainder()).toEqual("Keep on keepin on");
+  });
+
   test('should return a message if user has not surpassed life expectancy on Mars', () => {
     expect(galacticAge.marsRemainder()).toEqual("Keep on keepin on!");
   });
