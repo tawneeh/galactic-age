@@ -13,7 +13,7 @@ describe('GalacticAge', () => {
     expect(galacticAge.mercuryAge).toEqual(331);
     expect(galacticAge.venusAge).toEqual(129);
     expect(galacticAge.marsAge).toEqual(42);
-    expect(galacticAge.jupiterAge).toEqual(6);
+    expect(galacticAge.jupiterAge).toEqual(7);
   });
 
   test('should calculate number of Earth days old', () => {
@@ -73,4 +73,8 @@ test('should return a message if user has not surpassed life expectancy on Earth
 
   test('should return a message if user has not surpassed life expectancy on Mars', () => {
     expect(galacticAge.marsRemainder()).toEqual("Keep on keepin on!");
+  });
+
+  test('should return a message if user has not surpassed life expectancy on Jupiter', () => {
+    expect(galacticAge.jupiterRemainder()).toEqual("Keep on keepin on!");
   });
