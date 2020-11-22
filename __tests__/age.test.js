@@ -56,7 +56,7 @@ test('should determine if user has surpassed life expectancy on Mars and return 
     expect(galacticAge.marsRemainder()).toEqual(4);
   });
 
-test('should determine if user has surpassed life expectancy on Mars and return how many years they have lived past the expectancy', () => {
+test('should determine if user has surpassed life expectancy on Jupiter and return how many years they have lived past the expectancy', () => {
     expect(galacticAge.jupiterRemainder()).toEqual(1);
   });
 
