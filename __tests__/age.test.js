@@ -76,5 +76,5 @@ test('should return a message if user has not surpassed life expectancy on Earth
   });
 
   test('should return a message if user has not surpassed life expectancy on Jupiter', () => {
-    expect(galacticAge.jupiterRemainder()).toEqual("Keep on keepin on!");
+    expect(galacticAge.jupiterRemainder()).toEqual("Keep on keepin on");
   });
